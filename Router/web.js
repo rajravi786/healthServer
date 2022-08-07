@@ -22,4 +22,5 @@ router.post('/signup',SignupController.signUp)
 
 router.get('/getdata/:id',GetAttendanceController.getDataById)
 router.post('/postdata/:id',ExpenseController.expense)
+router.get('/getdataa/',GetDataaController.getAllDoc)
 export default router

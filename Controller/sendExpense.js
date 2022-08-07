@@ -12,7 +12,7 @@ class ExpenseController {
                     console.log(error);
                 } else {
                     console.log(success);
-                    res.status(200).json({message:"sucesss"})
+                    res.status(true).json({message:"sucesss"})
                 }
             });
         

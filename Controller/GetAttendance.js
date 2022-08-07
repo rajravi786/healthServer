@@ -6,7 +6,7 @@ class getAttendanceController {
         
 
      const result=   UserModel.findById(req.params.id)
-    .select({ "dates": { "$slice": -4 }})
+    .select({ "remainder": { "$slice": -4 }})
     .exec(function(err,doc) {
         if(err){
             console.log(err)
