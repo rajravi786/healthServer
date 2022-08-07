@@ -6,7 +6,7 @@ import SignupController from '../Controller/singUpController.js'
 import GetAttendanceController from '../Controller/GetAttendance.js'
 import ExpenseController from '../Controller/sendExpense.js'
 
-import GetDataaController from '../Controller/GetDataa.js'
+import GetDataaController from '../Controller/getdataa.js'
 
 const router = express.Router()
 
