@@ -7,7 +7,7 @@ class SignupController {
     
     
        let userExist = await UserModel.exists({username:req.body.username,
-      password:req.body.password,age:req.body.age},)
+      password:req.body.password},)
       if(userExist){
 
         return res.json({
@@ -24,7 +24,7 @@ class SignupController {
        let user = new UserModel({
             username:req.body.username,
             password:req.body.password,
-            age:req.body.age,
+            email:req.body.email,
             remainder:[]
           
            
