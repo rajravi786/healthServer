@@ -5,7 +5,7 @@ import mongoose from "mongoose"
 
 const remainders=new mongoose.Schema({
  time:String,
-  date:Date,
+  date:String,
   medicine:String,
   description:String,
 

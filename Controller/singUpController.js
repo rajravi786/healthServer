@@ -6,7 +6,8 @@ class SignupController {
     static signUp = async (req, res) => {
     
     
-       let userExist = await UserModel.exists({username:req.body.username},)
+       let userExist = await UserModel.exists({username:req.body.username,
+      password:req.body.password,age:req.body.age},)
       if(userExist){
 
         return res.json({
@@ -23,7 +24,8 @@ class SignupController {
        let user = new UserModel({
             username:req.body.username,
             password:req.body.password,
-            
+            age:req.body.age,
+            remainder:[]
           
            
             
